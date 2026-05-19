@@ -5,7 +5,10 @@ export default defineConfig({
     environment: 'node',
     include: ['src/**/*.test.ts', 'src/**/*.spec.ts'],
     exclude: ['dist/**', 'node_modules/**'],
+    globalSetup: ['./vitest.globalSetup.ts'],
     setupFiles: ['./vitest.setup.ts'],
+    pool: 'forks',
+    singleFork: true,
     clearMocks: true,
     restoreMocks: true,
     coverage: {
