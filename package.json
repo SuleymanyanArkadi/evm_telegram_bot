@@ -1,0 +1,42 @@
+{
+  "name": "evm-telegram-bot",
+  "version": "1.0.0",
+  "description": "Telegram bot for interacting with EVM smart contracts",
+  "main": "dist/app/bootstrap.js",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/app/bootstrap.ts",
+    "build": "tsc",
+    "start": "node dist/app/bootstrap.js",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev",
+    "lint": "eslint .",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "@fastify/cors": "^11.0.0",
+    "@prisma/adapter-pg": "^7.8.0",
+    "@prisma/client": "^7.8.0",
+    "dotenv": "^16.6.1",
+    "ethers": "^6.15.0",
+    "fastify": "^5.3.3",
+    "grammy": "^1.38.0",
+    "ioredis": "^5.8.1",
+    "pg": "^8.21.0",
+    "pino": "^9.7.0",
+    "pino-pretty": "^13.1.1",
+    "zod": "^3.25.28"
+  },
+  "devDependencies": {
+    "@types/node": "^24.12.4",
+    "@typescript-eslint/eslint-plugin": "^8.35.1",
+    "@typescript-eslint/parser": "^8.35.1",
+    "eslint": "^9.30.1",
+    "eslint-config-prettier": "^10.1.8",
+    "prettier": "^3.6.2",
+    "prisma": "^7.8.0",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3"
+  }
+}
