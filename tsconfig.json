@@ -14,5 +14,6 @@
     "sourceMap": true,
     "types": ["node"]
   },
-  "include": ["src", "prisma.config.ts"]
+  "include": ["src"],
+  "exclude": ["**/*.test.ts", "**/*.spec.ts"]
 }
